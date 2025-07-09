@@ -9,4 +9,1494 @@ focus_tree = {
 	}
 	default = no
 
+	shared_focus = WOR_KIR_Vermillion_Realm
+}
+
+shared_focus = {
+	id = WOR_KIR_Vermillion_Realm
+	icon = GFX_WOR_KIR_Vermillion_Realm
+	cost = 3.6
+	x = 15
+	y = 0
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Preparation_for_construction
+	icon = GFX_WOR_KIR_Preparation_for_construction
+	cost = 3.6
+	relative_position_id = WOR_KIR_Vermillion_Realm
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Vermillion_Realm
+	}
+	allow_branch = {
+		#NOT = {
+		#	has_country_flag = WOR_KCW_Start
+		#}
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+
+shared_focus = {
+	id = WOR_KIR_Delegates_Admission
+	icon = GFX_WOR_KIR_Delegates_Admission
+	cost = 3.6
+	relative_position_id = WOR_KIR_Vermillion_Realm
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Vermillion_Realm
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+
+
+
+shared_focus = {
+	id = WOR_KIR_Industrial_Planning_Department
+	icon = GFX_WOR_KIR_Industrial_Planning_Department
+	cost = 3.6
+	relative_position_id = WOR_KIR_Law_of_Realms
+	x = -4
+	y = 0
+	prerequisite = {
+		focus = WOR_KIR_Delegates_Admission
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Attract_Investment
+	icon = GFX_WOR_KIR_Attract_Investment
+	cost = 3.6
+	relative_position_id = WOR_KIR_Industrial_Planning_Department
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Industrial_Planning_Department
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Introducing_technology
+	icon = GFX_WOR_KIR_Introducing_technology
+	cost = 3.6
+	relative_position_id = WOR_KIR_Attract_Investment
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Attract_Investment
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Light_industry_leap_forward
+	icon = GFX_WOR_KIR_Light_industry_leap_forward
+	cost = 3.6
+	relative_position_id = WOR_KIR_Introducing_technology
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Introducing_technology
+	}
+	prerequisite = {
+		focus = WOR_KIR_Promote_banking
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Reconstruction_of_farmland
+	icon = GFX_WOR_KIR_Reconstruction_of_farmland
+	cost = 3.6
+	relative_position_id = WOR_KIR_Industrial_Planning_Department
+	x = -4
+	y = 2
+	prerequisite = {
+		focus = WOR_KIR_Industrial_Planning_Department
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Land_Reform
+	icon = GFX_WOR_KIR_Land_Reform
+	cost = 3.6
+	relative_position_id = WOR_KIR_Reconstruction_of_farmland
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Reconstruction_of_farmland
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Promote_banking
+	icon = GFX_WOR_KIR_Promote_banking
+	cost = 3.6
+	relative_position_id = WOR_KIR_Attract_Investment
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Attract_Investment
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Thousands_of_hammers_and_chisels_carved_out_the_mountains
+	icon = GFX_WOR_KIR_Thousands_of_hammers_and_chisels_carved_out_the_mountains
+	cost = 3.6
+	relative_position_id = WOR_KIR_Promote_banking
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Promote_banking
+	}
+	prerequisite = {
+		focus = WOR_KIR_Promote_banking
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Manufacturing_Development
+	icon = GFX_WOR_KIR_Manufacturing_Development
+	cost = 3.6
+	relative_position_id = WOR_KIR_Thousands_of_hammers_and_chisels_carved_out_the_mountains
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Thousands_of_hammers_and_chisels_carved_out_the_mountains
+	}
+	prerequisite = {
+		focus = WOR_KIR_Light_industry_leap_forward
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Industrialization_takes_off
+	icon = GFX_WOR_KIR_Industrialization_takes_off
+	cost = 3.6
+	relative_position_id = WOR_KIR_Manufacturing_Development
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Manufacturing_Development
+	}
+	prerequisite = {
+		focus = WOR_KIR_Road_network_plan
+	}
+	prerequisite = {
+		focus = WOR_KIR_Ensure_the_red_line
+	}
+	prerequisite = {
+		focus = WOR_KIR_Food_procurement_issues
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Road_network_plan
+	icon = GFX_WOR_KIR_Road_network_plan
+	cost = 3.6
+	relative_position_id = WOR_KIR_Light_industry_leap_forward
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Light_industry_leap_forward
+	}
+	prerequisite = {
+		focus = WOR_KIR_Thousands_of_hammers_and_chisels_carved_out_the_mountains
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Developing_the_inland_river_economy
+	icon = GFX_WOR_KIR_Developing_the_inland_river_economy
+	cost = 3.6
+	relative_position_id = WOR_KIR_Light_industry_leap_forward
+	x = 0
+	y = 3
+	prerequisite = {
+		focus = WOR_KIR_Road_network_plan
+	}
+	prerequisite = {
+		focus = WOR_KIR_Appease_the_nobles
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Developer_Portal
+	icon = GFX_WOR_WOR_KIR_Developer_Portal
+	cost = 3.6
+	relative_position_id = WOR_KIR_Developing_the_inland_river_economy
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Developing_the_inland_river_economy
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Limiting_the_urban_rural_gap
+	icon = GFX_WOR_KIR_Limiting_the_urban_rural_gap
+	cost = 3.6
+	relative_position_id = WOR_KIR_Developing_the_inland_river_economy
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Developing_the_inland_river_economy
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Realm_electrification
+	icon = GFX_WOR_KIR_Industrialization_takes_off
+	cost = 3.6
+	relative_position_id = WOR_KIR_Industrialization_takes_off
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Industrialization_takes_off
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Agricultural_mechanization
+	icon = GFX_WOR_KIR_Industrialization_takes_off
+	cost = 3.6
+	relative_position_id = WOR_KIR_Ensure_the_red_line
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = WOR_KIR_Ensure_the_red_line
+	}
+	prerequisite = {
+		focus = WOR_KIR_Food_procurement_issues
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Ensure_the_red_line
+	icon = GFX_WOR_KIR_Ensure_the_red_line
+	cost = 3.6
+	relative_position_id = WOR_KIR_Land_Reform
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Land_Reform
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Food_procurement_issues
+	icon = GFX_WOR_KIR_Food_procurement_issues
+	cost = 3.6
+	relative_position_id = WOR_KIR_Land_Reform
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Land_Reform
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_A_step_into_modernization
+	icon = GFX_WOR_KIR_A_step_into_modernization
+	cost = 3.6
+	relative_position_id = WOR_KIR_Realm_electrification
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = WOR_KIR_Developer_Portal
+	}
+	prerequisite = {
+		focus = WOR_KIR_Realm_electrification
+	}
+	prerequisite = {
+		focus = WOR_KIR_Limiting_the_urban_rural_gap
+	}
+	prerequisite = {
+		focus = WOR_KIR_Agricultural_mechanization
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#
+shared_focus = {
+	id = WOR_KIR_Law_of_Realms
+	icon = GFX_WOR_KIR_Law_of_Realms
+	cost = 3.6
+	relative_position_id = WOR_KIR_Delegates_Admission
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Delegates_Admission
+		focus = WOR_KIR_Preparation_for_construction
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+
+shared_focus = {
+	id = WOR_KIR_Abolition_of_prison
+	icon = GFX_WOR_KIR_Abolition_of_prison
+	cost = 3.6
+	relative_position_id = WOR_KIR_Law_of_Realms
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Law_of_Realms
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Administrative_modernization
+	icon = GFX_WOR_KIR_Administrative_modernization
+	cost = 3.6
+	relative_position_id = WOR_KIR_Law_of_Realms
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Law_of_Realms
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Open_public_discussion
+	icon = GFX_WOR_KIR_Open_public_discussion
+	cost = 3.6
+	relative_position_id = WOR_KIR_Abolition_of_prison
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Abolition_of_prison
+	}
+	prerequisite = {
+		focus = WOR_KIR_Administrative_modernization
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Anti_Corruption_Office
+	icon = GFX_WOR_KIR_Anti_Corruption_Office
+	cost = 3.6
+	relative_position_id = WOR_KIR_Administrative_modernization
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Abolition_of_prison
+	}
+	prerequisite = {
+		focus = WOR_KIR_Administrative_modernization
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Promise_to_convene_Congress
+	icon = GFX_WOR_KIR_Promise_to_convene_Congress
+	cost = 3.6
+	relative_position_id = WOR_KIR_Open_public_discussion
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Open_public_discussion
+	}
+	prerequisite = {
+		focus = WOR_KIR_Anti_Corruption_Office
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Limiting_local_power
+	icon = GFX_WOR_KIR_Limiting_local_power
+	cost = 3.6
+	relative_position_id = WOR_KIR_Anti_Corruption_Office
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Open_public_discussion
+	}
+	prerequisite = {
+		focus = WOR_KIR_Anti_Corruption_Office
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_High_Matriarch
+	icon = GFX_WOR_KIR_High_Matriarch
+	cost = 3.6
+	relative_position_id = WOR_KIR_Limiting_local_power
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Limiting_local_power
+	}
+	prerequisite = {
+		focus = WOR_KIR_Promise_to_convene_Congress
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Appease_the_nobles
+	icon = GFX_WOR_KIR_Appease_the_nobles
+	cost = 3.6
+	relative_position_id = WOR_KIR_High_Matriarch
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_High_Matriarch
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Good_law_and_good_governance
+	icon = GFX_WOR_KIR_Good_law_and_good_governance
+	cost = 3.6
+	relative_position_id = WOR_KIR_High_Matriarch
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_High_Matriarch
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Advancing_political_reform
+	icon = GFX_WOR_KIR_Advancing_political_reform
+	cost = 3.6
+	relative_position_id = WOR_KIR_Good_law_and_good_governance
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Good_law_and_good_governance
+	}
+	prerequisite = {
+		focus = WOR_KIR_Appease_the_nobles
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Reforming_the_Church
+	icon = GFX_WOR_KIR_Reforming_the_Church
+	cost = 3.6
+	relative_position_id = WOR_KIR_Advancing_political_reform
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Advancing_political_reform
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Reforming_local_administration
+	icon = GFX_WOR_KIR_Reforming_the_Church
+	cost = 3.6
+	relative_position_id = WOR_KIR_Advancing_political_reform
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Advancing_political_reform
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Rapidly_develop_the_talent_in_need
+	icon = GFX_WOR_KIR_Rapidly_develop_the_talent_in_need
+	cost = 3.6
+	relative_position_id = WOR_KIR_Law_of_Realms
+	x = 3
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Law_of_Realms
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Reforming_the_system_of_selecting_officials
+	icon = GFX_WOR_KIR_Reforming_the_system_of_selecting_officials
+	cost = 3.6
+	relative_position_id = WOR_KIR_Rapidly_develop_the_talent_in_need
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Rapidly_develop_the_talent_in_need
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Modernization_of_education
+	icon = GFX_WOR_KIR_Reforming_the_system_of_selecting_officials
+	cost = 3.6
+	relative_position_id = WOR_KIR_Reforming_the_system_of_selecting_officials
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Reforming_the_system_of_selecting_officials
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Universal_basic_education
+	icon = GFX_WOR_KIR_Universal_basic_education
+	cost = 3.6
+	relative_position_id = WOR_KIR_Modernization_of_education
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Modernization_of_education
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#
+shared_focus = {
+	id = WOR_KIR_Reevaluating_status
+	icon = GFX_WOR_KIR_Reevaluating_status
+	cost = 3.6
+	relative_position_id = WOR_KIR_Preparation_for_construction
+	x = 4
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Preparation_for_construction
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Zai_Kiria
+	icon = GFX_WOR_KIR_Zai_Kiria
+	cost = 3.6
+	relative_position_id = WOR_KIR_Reevaluating_status
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Reevaluating_status
+	}
+
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Establishment_of_weapons_design_bureau
+	icon = GFX_WOR_KIR_Establishment_of_weapons_design_bureau
+	cost = 3.6
+	relative_position_id = WOR_KIR_Zai_Kiria
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Zai_Kiria
+	}
+	prerequisite = {
+		focus = WOR_KIR_Rapidly_develop_the_talent_in_need
+	}
+	prerequisite = {
+		focus = WOR_KIR_System_Reconstruction
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Military_construction
+	icon = GFX_WOR_KIR_Military_construction
+	cost = 3.6
+	relative_position_id = WOR_KIR_Establishment_of_weapons_design_bureau
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Establishment_of_weapons_design_bureau
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Targeting_strong_enemies
+	icon = GFX_WOR_KIR_Military_construction
+	cost = 3.6
+	relative_position_id = WOR_KIR_Military_construction
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Military_construction
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Experimental_armor_design
+	icon = GFX_WOR_KIR_Experimental_armor_design
+	cost = 3.6
+	relative_position_id = WOR_KIR_Military_construction
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Military_construction
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Border_Defense_Program
+	icon = GFX_WOR_KIR_Border_Defense_Program
+	cost = 3.6
+	relative_position_id = WOR_KIR_Targeting_strong_enemies
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Targeting_strong_enemies
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Autonomous_design
+	icon = GFX_WOR_KIR_Autonomous_design
+	cost = 3.6
+	relative_position_id = WOR_KIR_Experimental_armor_design
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Experimental_armor_design
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+
+shared_focus = {
+	id = WOR_KIR_Reorganization_Banners_Army
+	icon = GFX_WOR_KIR_Reorganization_Banners_Army
+	cost = 3.6
+	relative_position_id = WOR_KIR_Preparation_for_construction
+	x = 6
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Preparation_for_construction
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_System_Reconstruction
+	icon = GFX_WOR_KIR_System_Reconstruction
+	cost = 3.6
+	relative_position_id = WOR_KIR_Reorganization_Banners_Army
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Reorganization_Banners_Army
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Grillo_Military_Academy
+	icon = GFX_WOR_KIR_Grillo_Military_Academy
+	cost = 3.6
+	relative_position_id = WOR_KIR_System_Reconstruction
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_System_Reconstruction
+	}
+	prerequisite = {
+		focus = WOR_KIR_Zai_Kiria
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Promote_new_officers
+	icon = GFX_WOR_KIR_Promote_new_officers
+	cost = 3.6
+	relative_position_id = WOR_KIR_Grillo_Military_Academy
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Grillo_Military_Academy
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Modernization_of_doctrine
+	icon = GFX_WOR_KIR_Modernization_of_doctrine
+	cost = 3.6
+	relative_position_id = WOR_KIR_Promote_new_officers
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Promote_new_officers
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Duties_to_guard_territory
+	icon = GFX_WOR_KIR_Duties_to_guard_territory
+	cost = 3.6
+	relative_position_id = WOR_KIR_Modernization_of_doctrine
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Modernization_of_doctrine
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+
+shared_focus = {
+	id = WOR_KIR_Develop_the_Coast
+	icon = GFX_WOR_KIR_Develop_the_Coast
+	cost = 3.6
+	relative_position_id = WOR_KIR_System_Reconstruction
+	x = 3
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_System_Reconstruction
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Blue_Water_Navy
+	icon = GFX_WOR_KIR_Blue_Water_Navy
+	cost = 3.6
+	relative_position_id = WOR_KIR_Develop_the_Coast
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Develop_the_Coast
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Order_foreign_designs
+	icon = GFX_WOR_KIR_Order_foreign_designs
+	cost = 3.6
+	relative_position_id = WOR_KIR_Blue_Water_Navy
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = WOR_KIR_Blue_Water_Navy
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+shared_focus = {
+	id = WOR_KIR_Military_modernization
+	icon = GFX_WOR_KIR_Military_modernization
+	cost = 3.6
+	relative_position_id = WOR_KIR_Order_foreign_designs
+	x = -5
+	y = 2
+	prerequisite = {
+		focus = WOR_KIR_Order_foreign_designs
+	}
+	prerequisite = {
+		focus = WOR_KIR_Border_Defense_Program
+	}
+	prerequisite = {
+		focus = WOR_KIR_Autonomous_design
+	}
+	prerequisite = {
+		focus = WOR_KIR_Duties_to_guard_territory
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
+}
+
+shared_focus = {
+	id = WOR_KIR_The_First_Congress
+	icon = GFX_WOR_KIR_The_First_Congress
+	cost = 3.6
+	relative_position_id = WOR_KIR_Reforming_the_Church
+	x = 1
+	y = 2
+	prerequisite = {
+		focus = WOR_KIR_Reforming_the_Church
+	}
+	prerequisite = {
+		focus = WOR_KIR_Reforming_local_administration
+	}
+	prerequisite = {
+		focus = WOR_KIR_Military_modernization
+	}
+	prerequisite = {
+		focus = WOR_KIR_A_step_into_modernization
+	}
+	available = {
+		
+	}
+	cancelable = no
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+	ai_will_do = {
+			factor = 1
+	}
 }
