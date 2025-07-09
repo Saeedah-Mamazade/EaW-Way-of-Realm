@@ -1,0 +1,11 @@
+KIR_bop_category = {
+	allowed = {
+		original_tag = KIR
+	}
+	visible = {
+		has_country_flag = KIR_theocracy_bop_began_flag
+	}
+	priority = {
+		base = 200
+	}
+}

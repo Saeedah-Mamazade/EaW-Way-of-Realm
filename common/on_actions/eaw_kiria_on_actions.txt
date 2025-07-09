@@ -1,0 +1,705 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			KIR = {
+				# kir hierarchy
+				#kir_hch_setup_arrays_effect = yes
+				# kir_psol_alerts
+				#if = {
+				#	limit = { has_dlc = "La Resistance" }
+				#	set_variable = { KIR_PSOL_gui_dlc_array^0 = 56 }
+				#}
+				#else = {
+				#	set_variable = { KIR_PSOL_gui_dlc_array^0 = 48 }
+				#}
+				#set_variable = { KIR_PSOL_gui_dlc_array^1 = KIR_PSOL_gui_dlc_array^0 }
+				#add_to_variable = { KIR_PSOL_gui_dlc_array^1 = 14 }
+				#set_variable = { KIR_PSOL_gui_dlc_array^2 = KIR_PSOL_gui_dlc_array^1 }
+				#add_to_variable = { KIR_PSOL_gui_dlc_array^2 = 28 }
+				#set_variable = { KIR_PSOL_gui_dlc_array^3 = KIR_PSOL_gui_dlc_array^2 }
+				#add_to_variable = { KIR_PSOL_gui_dlc_array^3 = 28 }
+				#set_variable = { KIR_PSOL_gui_dlc_array^4 = KIR_PSOL_gui_dlc_array^3 }
+				#add_to_variable = { KIR_PSOL_gui_dlc_array^4 = 28 }
+				#while_loop_effect = {
+				#	limit = { check_variable = { KIR_PSOL_gui_dlc_alert_array_temp < 9 } }
+				#	set_variable = { KIR_PSOL_gui_dlc_alert_array^KIR_PSOL_gui_dlc_alert_array_temp = 48 }
+				#	multiply_variable = { KIR_PSOL_gui_dlc_alert_array^KIR_PSOL_gui_dlc_alert_array_temp = KIR_PSOL_gui_dlc_alert_array_temp }
+				#	add_to_variable = { KIR_PSOL_gui_dlc_alert_array^KIR_PSOL_gui_dlc_alert_array_temp = KIR_PSOL_gui_dlc_array^0 }
+				#	add_to_temp_variable = { KIR_PSOL_gui_dlc_alert_array_temp = 1 }
+				#}
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						FROM = { original_tag = KIR }
+						ROOT = { original_tag = KIR }
+					}
+					#has_completed_focus = KIR_CONSCRIPTION
+				}
+				KIR = {
+					#add_ideas = KIR_VaKA_wartime_conscription
+				}
+			}
+		}
+	}
+
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = NVA }
+				}
+				ROOT = { set_cosmetic_tag = NVA_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = ZOO }
+				}
+				ROOT = { set_cosmetic_tag = ZOO_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = ROA }
+				}
+				ROOT = { set_cosmetic_tag = ROA_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = KXN }
+				}
+				ROOT = { set_cosmetic_tag = KXN_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = YAN }
+				}
+				ROOT = { set_cosmetic_tag = YAN_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = DEL }
+				}
+				ROOT = { set_cosmetic_tag = DEL_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = GFS }
+				}
+				ROOT = { set_cosmetic_tag = GFS_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = TSV }
+				}
+				ROOT = { set_cosmetic_tag = TSV_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = BRS }
+				}
+				ROOT = { set_cosmetic_tag = BRS_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = GAZ }
+				}
+				ROOT = { set_cosmetic_tag = GAZ_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = ZLU }
+				}
+				ROOT = { set_cosmetic_tag = ZLU_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = MQA }
+				}
+				ROOT = { set_cosmetic_tag = MQA_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = {
+						NOT = {
+							original_tag = NVA
+							original_tag = ZOO
+							original_tag = ROA
+							original_tag = KXN
+							original_tag = YAN
+							original_tag = DEL
+							original_tag = GFS
+							original_tag = TSV
+							original_tag = BRS
+							original_tag = GAZ
+							original_tag = ZLU
+							original_tag = MQA
+						}
+					}
+				}
+				ROOT = { set_cosmetic_tag = KIR_PUPPET }
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KIC
+					}
+					ROOT = { original_tag = GAZ }
+				}
+				ROOT = { set_cosmetic_tag = GAZ_KIC }
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KIC
+					}
+					ROOT = { original_tag = YAN }
+				}
+				ROOT = { set_cosmetic_tag = YAN_KIC }
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KIC
+					}
+					ROOT = {
+						NOT = {
+							original_tag = GAZ
+							original_tag = YAN
+						}
+					}
+				}
+				ROOT = { set_cosmetic_tag = KIC_PUPPET }
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = NVA }
+				}
+				ROOT = { set_cosmetic_tag = NVA_KIR }
+				if = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = 1058
+						}
+					}
+					FROM = { transfer_state = 1058 }
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = ZOO }
+				}
+				ROOT = { set_cosmetic_tag = ZOO_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = ROA }
+				}
+				ROOT = { set_cosmetic_tag = ROA_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = KXN }
+				}
+				ROOT = { set_cosmetic_tag = KXN_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = YAN }
+				}
+				ROOT = { set_cosmetic_tag = YAN_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = DEL }
+				}
+				ROOT = { set_cosmetic_tag = DEL_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = GFS }
+				}
+				ROOT = { set_cosmetic_tag = GFS_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = TSV }
+				}
+				ROOT = { set_cosmetic_tag = TSV_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = BRS }
+				}
+				ROOT = { set_cosmetic_tag = BRS_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = GAZ }
+				}
+				ROOT = { set_cosmetic_tag = GAZ_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = ZLU }
+				}
+				ROOT = { set_cosmetic_tag = ZLU_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = MQA }
+				}
+				ROOT = { set_cosmetic_tag = MQA_KIR }
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIR
+							original_tag = KIS
+						}
+					}
+					ROOT = {
+						NOT = {
+							original_tag = NVA
+							original_tag = ZOO
+							original_tag = ROA
+							original_tag = KXN
+							original_tag = YAN
+							original_tag = DEL
+							original_tag = GFS
+							original_tag = TSV
+							original_tag = BRS
+							original_tag = GAZ
+							original_tag = ZLU
+							original_tag = MQA
+						}
+					}
+				}
+				ROOT = { set_cosmetic_tag = KIR_PUPPET }
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KIC
+					}
+					ROOT = { original_tag = GAZ }
+				}
+				ROOT = { set_cosmetic_tag = GAZ_KIC }
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KIC
+					}
+					ROOT = { original_tag = YAN }
+				}
+				ROOT = { set_cosmetic_tag = YAN_KIC }
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KIC
+					}
+					ROOT = {
+						NOT = {
+							original_tag = GAZ
+							original_tag = YAN
+						}
+					}
+				}
+				ROOT = { set_cosmetic_tag = KIC_PUPPET }
+			}
+		}
+	}
+
+
+
+	on_peaceconference_ended = {
+		effect = {
+			# PUT EVERYTHING IN THE IF BELOW
+			# THE bypass_on_peaceconference_ended FLAG **HAS** TO BE SET BEFORE CALLING THE white_peace COMMAND AND CLEARED AFTERWARDS
+			
+		}
+	}
+
+	on_army_leader_lost_combat = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = KIC
+							original_tag = KIS
+						}
+					}
+					set_temp_variable = { chance = 0.15 }
+					check_variable = { random < chance }
+					KIR = {
+						has_template_containing_unit = bar_weak_clockwerk
+					}
+				}
+				FROM = {
+					if = {
+						limit = {
+							original_tag = KIC
+						}
+						country_event = { id = kirin_utility.25 }
+					}
+					if = {
+						limit = {
+							original_tag = KIS
+						}
+						country_event = { id = kirin_utility.26 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = KIR
+					}
+					set_temp_variable = { chance = 0.15 }
+					check_variable = { random < chance }
+					KIS = {
+						has_country_flag = KIS_hired_changeling_expedition
+						has_template_containing_unit = jager
+					}
+				}
+				FROM = {
+					country_event = { id = kirin_utility.27 }
+				}
+			}
+		}
+	}
+
+	on_offer_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					tag = KIR
+					has_completed_focus = KIR_POST_WAR_Beacons_Research
+				}
+				FROM = {
+					add_to_tech_sharing_group = KIR_prosperity_endowment_group
+				}
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = { # state fall events
+				limit = {
+					has_war_with = FROM
+					FROM = {
+						NOT = { original_tag = ROOT }
+					}
+					FROM.FROM = {
+						is_owned_by = FROM
+						NOT = { has_state_flag = state_has_fallen }
+					}
+				}
+				if = {#Vermilion
+					limit = {
+						FROM.FROM = { state = 1059 }
+						NOT = { has_global_flag = fall_of_vermilion }
+					}
+					news_event = cityfall.50
+				}
+				else_if = {#FRV
+					limit = {
+						FROM = {
+							original_tag = KIS
+							has_country_flag = KIS_FRV_flag
+						}
+						ROOT = { original_tag = KIC }
+						FROM.FROM = { state = 1071 }
+						NOT = { has_global_flag = death_of_FRV }
+					}
+					ROOT = { country_event = { id = kirin_republic.96 } }
+					FROM = { country_event = { id = kirin_republic.96 } }
+					set_global_flag = death_of_FRV
+				}
+				else_if = {#Fragrance - CFR
+					limit = {
+						FROM = {
+							original_tag = KIS
+							NOT = { has_country_flag = KIS_FRV_flag }
+						}
+						OR = {
+							FROM = {
+								has_country_flag = KIS_chose_changeling_investors_flag
+							}
+							CHN = {
+								has_country_flag = KIS_chose_changeling_investors_flag
+							}
+						}
+						CHN = {
+							exists = yes
+							is_subject = no
+							has_government = fascism
+						}
+						FROM.FROM = { state = 1071 }
+						NOT = { has_global_flag = changelings_takeover_fragrance }
+					}
+					news_event = cityfall.510
+					FROM = {
+						if = {
+							limit = {
+								is_ai = no
+							}
+							country_event = { id = kirin_council.721 }
+						}
+					}
+					ROOT = {
+						country_event = { id = kirin_council.73 days = 30 }
+					}
+				}
+				else_if = {#Fragrance - fall of CFR
+					limit = {
+						FROM = {
+							original_tag = CHN
+							has_country_flag = CHN_FRV_flag
+						}
+						FROM.FROM = { state = 1071 }
+						NOT = { has_global_flag = changeling_fragrance_falls }
+					}
+					news_event = cityfall.511
+				}
+				else_if = {#Fragrance - Normal
+					limit = {
+						FROM.FROM = { state = 1071 }
+						NOT = { has_global_flag = fall_of_fragrance }
+					}
+					news_event = cityfall.51
+				}
+				else_if = {#Verdant
+					limit = {
+						FROM.FROM = { state = 1073 }
+						NOT = { has_global_flag = fall_of_verdant }
+					}
+					news_event = cityfall.52
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						tag = KIC
+						NOT = { has_country_flag = KIC_UMC_flag }
+					}
+					FROM = {
+						tag = UMC
+					}
+				}
+				FROM.FROM = {
+					force_enable_resistance = KIC
+					start_resistance = KIC
+					add_resistance = 10
+					add_resistance_target = 5
+					add_compliance = -5
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							tag = COC
+							AND = {
+								original_tag = KIC
+								has_country_flag = KIC_children_of_concord_flag
+							}
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = KIS
+							is_subject_of = KIS
+						}
+					}
+					FROM.FROM = {
+						OR = {
+							is_core_of = ROOT
+							state = 816
+							state = 1067
+							state = 1069
+							state = 1073
+							state = 1076
+							state = 1077
+							state = 1078
+							state = 1081
+						}
+					}
+				}
+				FROM.FROM = {
+					set_state_owner_to = ROOT
+				}
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+			
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+focus_tree = {
+	id = KIR_1007_start
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KIR
+		}
+	}
+	default = no
+
+}
