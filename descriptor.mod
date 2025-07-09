@@ -8,4 +8,4 @@ tags={
 	"Events"
 }
 supported_version="1.*.*"
-path="Documents/Paradox Interactive/Hearts of Iron IV/mod/EAWAbsentCalling"
+path="C:/Users/cheng/Documents/Paradox Interactive/Hearts of Iron IV/mod/EaW-Way-of-Realm"
