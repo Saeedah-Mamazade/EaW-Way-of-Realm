@@ -16,7 +16,7 @@ shared_focus = {
 	id = WOR_KIR_Vermillion_Realm
 	icon = GFX_WOR_KIR_Vermillion_Realm
 	cost = 3.6
-	x = 15
+	x = 16
 	y = 0
 	available = {
 		
